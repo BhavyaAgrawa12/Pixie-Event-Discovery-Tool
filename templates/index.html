@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pixie Event Discovery Tool</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+   
+
+  <div class="app-container">
+    <div class="card">
+      <h1>Pixie Event Discovery Tool</h1>
+      <p class="subtitle">
+        Internal tool to fetch and track public events
+      </p>
+
+      <div class="form-group">
+        <label for="city">Select City</label>
+        <select id="city">
+          <option value="mumbai">Mumbai</option>
+          <option value="bangalore">Bangalore</option>
+          <option value="pune">Pune</option>
+        </select>
+      </div>
+
+      <button id="fetchBtn">Fetch Events</button>
+
+      <div id="statusBox" class="status hidden"></div>
+    </div>
+
+    <footer>
+      <span>Powered by Flask · Google Sheets · AllEvents.in</span>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
